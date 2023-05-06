@@ -13,7 +13,8 @@ app = FastAPI()
 
 # This needs to change! its your CORS access
 
-origins = ["http://localhost:7137", "http://localhost:3000"]
+origins = ["http://localhost:7137", "http://localhost:3000",
+           "https://aquamarine-otter-164c0e.netlify.app"]
 
 app.add_middleware(
     CORSMiddleware,
